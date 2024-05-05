@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
@@ -8,6 +9,15 @@ public class Client {
 
             shallowCopyCircle.setColor(Color.PINK);
             deepCopyCircle.setColor(Color.RED);
+
+
+            ShapeFactory factory = new ShapeFactory();
+            Shape shape1 = factory.createShape(ShapeType.Triangle, Color.green);
+            Shape shape2 = factory.createShape(ShapeType.Rectangle, Color.black);
+            Shape shape3 = factory.createShape(ShapeType.Circle, Color.orange);
+            shape1.display();
+            shape2.display();
+            shape3.display();
 
         }
 }
