@@ -13,4 +13,5 @@ public abstract class Shape {
     public void display(){
         System.out.println(this.getClass().getSimpleName() + " of color" + String.format(" #%06X", color.hashCode() & 0xFFFFFF));
     };
+
 }
